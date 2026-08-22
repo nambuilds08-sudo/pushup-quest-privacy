@@ -1,43 +1,294 @@
-Privacy Policy — Pushup Quest
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Pushup Quest</title>
 
-Effective Date: August 2026
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-1. Information We Collect
-Pushup Quest stores workout-related information such as nickname, age, weight, workout history, achievements, level/progress data, and app settings locally on your device.
-We do not collect or store this personal information on our own servers, and the app does not require account registration, sign-up, or login of any kind.
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f6f8;
+            color: #202124;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
 
-2. Data Storage
-All workout records, user settings, achievements, and statistics are stored locally on your device using the device's local storage (via the Capacitor Preferences API). No personal information is uploaded to our servers, and we do not operate any backend server that receives or stores your data.
+        .container {
+            max-width: 820px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
 
-3. Camera Permission and Automatic Push-Up Counting
-Pushup Quest offers an optional "Auto Count" mode that uses your device's camera to automatically count push-up repetitions.
+        .policy {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 48px 52px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
 
-Camera access is requested only if you choose to enable Auto Count mode; it is never used elsewhere in the app.
-When enabled, the camera video feed is analyzed entirely on your device using an on-device face-detection library (Google's MediaPipe Face Detector), which runs locally in the app.
-Camera images or video frames are processed in real time to detect the position and size of your face in order to count repetitions. No image, video, or camera data is recorded, saved, uploaded, or transmitted to us or to any third party at any point.
-You can decline camera access and use manual tap-based counting instead, which does not require any camera permission.
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+        }
 
-4. Advertising
-Pushup Quest uses Google AdMob to display advertisements.
-Google AdMob may collect certain information, including advertising identifiers, device information, and usage data, to provide personalized or non-personalized advertisements in accordance with Google's policies. This app requests the Android Advertising ID permission for this purpose.
-For more information, please review Google's Privacy Policy and how Google uses information from apps that use its services:
+        .subtitle {
+            margin-top: 8px;
+            margin-bottom: 36px;
+            color: #6b7280;
+            font-size: 15px;
+        }
 
-https://policies.google.com/privacy
-https://policies.google.com/technologies/partner-sites
+        h2 {
+            margin-top: 36px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            color: #111827;
+        }
 
-5. Third-Party Services
-This application uses the following third-party components:
+        p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
 
-Google AdMob — used to display advertisements. May collect information as described in Section 4 above and Google's own privacy policy.
-Google MediaPipe (on-device library) — used only for local, on-device face detection to power the Auto Count feature described in Section 3. This library does not connect to any server and does not transmit any data; it runs entirely within the app on your device.
+        ul {
+            padding-left: 22px;
+        }
 
-We do not use any other third-party analytics, tracking, or data-collection services.
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
 
-6. Children's Privacy
-Pushup Quest does not knowingly collect personal information from children. Since the app does not require account creation and stores all data locally on-device, no personal information is transmitted to us regardless of the user's age.
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
 
-7. Changes to This Privacy Policy
-This Privacy Policy may be updated from time to time. Any updates will be posted on this page.
+        a:hover {
+            text-decoration: underline;
+        }
 
-8. Contact
-Email: nambuilds08@gmail.com
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            .policy {
+                padding: 30px 22px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="policy">
+
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">
+            Pushup Quest · Effective Date: August 2026
+        </div>
+
+        <h2>1. Information We Collect</h2>
+
+        <p>
+            Pushup Quest stores workout-related information such as nickname,
+            age, weight, workout history, achievements, level/progress data,
+            and app settings locally on your device.
+        </p>
+
+        <p>
+            We do not collect or store this personal information on our own
+            servers, and the app does not require account registration,
+            sign-up, or login of any kind.
+        </p>
+
+
+        <h2>2. Data Storage</h2>
+
+        <p>
+            All workout records, user settings, achievements, and statistics
+            are stored locally on your device using the device's local storage
+            (via the Capacitor Preferences API).
+        </p>
+
+        <p>
+            No personal information is uploaded to our servers, and we do not
+            operate any backend server that receives or stores your data.
+        </p>
+
+
+        <h2>3. Camera Permission and Automatic Push-Up Counting</h2>
+
+        <p>
+            Pushup Quest offers an optional "Auto Count" mode that uses your
+            device's camera to automatically count push-up repetitions.
+        </p>
+
+        <ul>
+            <li>
+                Camera access is requested only if you choose to enable
+                Auto Count mode; it is never used elsewhere in the app.
+            </li>
+
+            <li>
+                When enabled, the camera video feed is analyzed entirely on
+                your device using an on-device face-detection library
+                (Google's MediaPipe Face Detector), which runs locally in
+                the app.
+            </li>
+
+            <li>
+                Camera images or video frames are processed in real time to
+                detect the position and size of your face in order to count
+                repetitions. No image, video, or camera data is recorded,
+                saved, uploaded, or transmitted to us or to any third party
+                at any point.
+            </li>
+
+            <li>
+                You can decline camera access and use manual tap-based
+                counting instead, which does not require any camera
+                permission.
+            </li>
+        </ul>
+
+
+        <h2>4. Advertising</h2>
+
+        <p>
+            Pushup Quest uses Google AdMob to display advertisements.
+        </p>
+
+        <p>
+            Google AdMob may collect certain information, including
+            advertising identifiers, device information, and usage data,
+            to provide personalized or non-personalized advertisements
+            in accordance with Google's policies.
+        </p>
+
+        <p>
+            This app requests the Android Advertising ID permission for
+            this purpose.
+        </p>
+
+        <p>
+            For more information, please review Google's Privacy Policy
+            and how Google uses information from apps that use its services:
+        </p>
+
+        <p>
+            <a href="https://policies.google.com/privacy" target="_blank">
+                Google Privacy Policy
+            </a>
+        </p>
+
+        <p>
+            <a href="https://policies.google.com/technologies/partner-sites"
+               target="_blank">
+                How Google uses information from apps that use its services
+            </a>
+        </p>
+
+
+        <h2>5. Third-Party Services</h2>
+
+        <p>
+            This application uses the following third-party components:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Google AdMob</strong> — used to display advertisements.
+                May collect information as described in Section 4 above and
+                Google's own privacy policy.
+            </li>
+
+            <li>
+                <strong>Google MediaPipe (on-device library)</strong> — used
+                only for local, on-device face detection to power the Auto
+                Count feature described in Section 3. This library does not
+                connect to any server and does not transmit any data; it runs
+                entirely within the app on your device.
+            </li>
+        </ul>
+
+        <p>
+            We do not use any other third-party analytics, tracking, or
+            data-collection services.
+        </p>
+
+
+        <h2>6. Children's Privacy</h2>
+
+        <p>
+            Pushup Quest does not knowingly collect personal information
+            from children.
+        </p>
+
+        <p>
+            Since the app does not require account creation and stores all
+            data locally on-device, no personal information is transmitted
+            to us regardless of the user's age.
+        </p>
+
+
+        <h2>7. Changes to This Privacy Policy</h2>
+
+        <p>
+            This Privacy Policy may be updated from time to time.
+            Any updates will be posted on this page.
+        </p>
+
+
+        <h2>8. Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:nambuilds08@gmail.com">
+                nambuilds08@gmail.com
+            </a>
+        </p>
+
+        <div class="footer">
+            © 2026 Pushup Quest. All rights reserved.
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
